@@ -1,0 +1,53 @@
+/* ======== LIGHT MODE (default) ======== */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  body.light .themed-box {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* ======== DARK MODE ======== */
+  body.dark {
+    background-color: #121212;
+    color: #ffffff;  
+  }
+  
+  body.dark .themed-box {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+
+  /* 🔶 Make links yellow in dark mode */
+body.dark a {
+  color: #ffeb3b; 
+}
+
+
+  /* ======== Common Styling ======== */
+  body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+  }
+
+  
+  
+  .themed-box {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+  }
+  

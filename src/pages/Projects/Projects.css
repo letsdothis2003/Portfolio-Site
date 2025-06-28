@@ -1,0 +1,55 @@
+.projects-section {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.theme-box {
+  background-color: var(--box-background);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-title {
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.project-details {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--box-background); /* Keeps theme consistent */
+  border-top: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}

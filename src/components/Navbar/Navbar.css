@@ -1,0 +1,45 @@
+.navbar {
+  background: #222;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav_links li a {
+  color: white;
+  text-decoration: none;
+}
+
+#mobile {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 1rem;
+  }
+
+  .nav_links.show {
+    display: flex;
+  }
+
+  #mobile {
+    display: block;
+  }
+}
