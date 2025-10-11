@@ -25,7 +25,7 @@ const ContactForm = () => {
           <ul>
             <li>
               <a
-                href="hhttps://github.com/letsdothis2003"
+                href="https://github.com/letsdothis2003"
                 target="_blank"
                 rel="noopener noreferrer"
               >
