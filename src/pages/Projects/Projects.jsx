@@ -2,6 +2,21 @@ import React, { useState } from 'react';
 import './Projects.css';
 
 const projectData = [
+      {
+    title: 'AI-Generated Image Detector',
+    description: 'I got interested in digital image processing around the fall, I thought I can create something that can tackle the issue of ai slop on social media',
+    publishDate: 'ONGOING AS OF 11/12',
+    collaborators: 'Ahmed Ali',
+    link: 'https://github.com/letsdothis2003/AI-Generated-Image-Detector',
+  },
+    {
+    title: 'MAYTHON: MAYO Multivariete Scheme Recreation',
+    description: 'Me and a fellow group of friends were interested in crytography schemes, so we decided to recreate it using python.',
+    publishDate: 'January 21, 2026',
+    collaborators: 'Jude Merryshow, Labib Nafi, Mooshorof Hussain',
+    link: 'https://github.com/letsdothis2003/Maython',
+  },
+
   {
     title: 'Library Management System',
     description: 'A database management system using SQL and Java. It is intended to track checked out books, library members and staff along with relational constraints',
@@ -44,7 +59,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section">
       <div className="themed-box">
-        <h2 className="section-title">My Projects</h2>
+        <h2 className="section-title">My Projects(Click the names to expand)</h2>
       </div>
 
       <div className="projects-container">
