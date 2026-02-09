@@ -5,14 +5,14 @@ const projectData = [
       {
     title: 'AI-Generated Image Detector',
     description: 'I got interested in digital image processing around the fall, I thought I can create something that can tackle the issue of ai slop on social media',
-    publishDate: 'ONGOING AS OF 11/12',
+    Date: '11/12/2025-2/8/2026(Phase 1)' ,
     collaborators: 'Ahmed Ali',
     link: 'https://github.com/letsdothis2003/AI-Generated-Image-Detector',
   },
     {
     title: 'MAYTHON: MAYO Multivariete Scheme Recreation',
     description: 'Me and a fellow group of friends were interested in crytography schemes, so we decided to recreate it using python.',
-    publishDate: 'January 21, 2026',
+    Date: '9/18/2025-1/20/2026',
     collaborators: 'Jude Merryshow, Labib Nafi, Mooshorof Hussain',
     link: 'https://github.com/letsdothis2003/Maython',
   },
@@ -20,7 +20,7 @@ const projectData = [
   {
     title: 'Library Management System',
     description: 'A database management system using SQL and Java. It is intended to track checked out books, library members and staff along with relational constraints',
-    publishDate: 'May 11, 2025',
+    Date: '4/22/2025-5/11/2026(Phase 1)',
     collaborators: 'Jessica Chen, Khalid Issa, Abul Hasan, Jason Lopez',
     link: 'https://github.com/letsdothis2003/Library-Database-Management-System',
   },
@@ -28,14 +28,14 @@ const projectData = [
     title: 'Customer Churn System',
     description: 
     'A software system we developed in Java which uses the machine learning algorithm known as Random Forest to predict if a customer will quit their subscription using their data.',
-    publishDate: 'Dec 15, 2024',
+    Date: '10/3/2024-12/15/2024(Phase 1)',
     collaborators: 'Ahmed Ali, Abul Hasan',
     link: 'https://github.com/letsdothis2003/Customer_Churn_System',
   },
   {
     title: 'Music Festival Website',
     description: 'A website we designed which uses Stripe API along with other tools to represent local music events and a functional merch store',
-    publishDate: 'Dec 12, 2024',
+    Date: '11/13/2025-12/12/2024',
     collaborators: 'Jamal Siddiqui, Steven Campeche',
     link: 'https://github.com/letsdothis2003/Music-Festival-Website',
   },
@@ -43,7 +43,7 @@ const projectData = [
     title: 'Technology Company Website',
     description: 
     'A template we designed to act as a template for a company website. We included some wacky and relatively bizzare photos and concepts just to grab user attention',
-    publishDate: 'Nov 3, 2024',
+    Date: '10/27/2025-11/3/2024',
     collaborators: ' Bernardo Antonio Manto, Shah Muzafar, Steven Campeche, Jamal Siddiqui',
     link: 'https://github.com/letsdothis2003/Technology-Company-Website',
   },
