@@ -24,6 +24,18 @@ h2 {
   text-indent: 2em; 
 }
 
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: slateBlue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
 body.dark section, 
 body.dark .themed-box, 
 body.dark .form-container,
@@ -33,3 +45,4 @@ body.dark .projects-section {
   color: white;
   border-radius: 8px;
 }
+
