@@ -8,7 +8,7 @@ const Footer = () => {
       marginTop: 'auto',
       borderTop: '1px solid #ccc' 
     }}>
-      <p>&copy; 2024-{new Date().getFullYear()} F. Tanvir. Site made with React and Github Pages.</p>
+      <p>&copy; 2024-{new Date().getFullYear()}  F. Tanvir. Site made with React and Github Pages.</p>
     </footer>
   );
 };
