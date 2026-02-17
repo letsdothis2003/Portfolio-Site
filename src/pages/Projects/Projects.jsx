@@ -3,8 +3,7 @@ import './Projects.css';
 
 const projectData = [
   {
-    title: 'AI-Generated Image Detector',
-    title: 'AI-Generated Image Detector(2026-Ongoing)',
+    title: 'AI-Generated Image Detector (2026-Ongoing)',
     description:
       'I became interested in digital image processing in the fall and wanted to create a system that could help address the rise of AI-generated content on social media. This project focuses on detecting AI-generated images using machine learning techniques.',
     publishDate: '11/12/2025 to 2/8/2026 (Phase 1)',
@@ -12,8 +11,7 @@ const projectData = [
     link: 'https://github.com/letsdothis2003/AI-Generated-Image-Detector',
   },
   {
-    title: 'MAYTHON: MAYO Multivariate Scheme Recreation',
-    title: 'MAYTHON: MAYO Multivariate Scheme Recreation(2026)',
+    title: 'MAYTHON: MAYO Multivariate Scheme Recreation (2026)',
     description:
       'A collaborative project where my team and I recreated the MAYO multivariate cryptographic scheme using Python. We explored cryptographic concepts and implemented the scheme from scratch.',
     publishDate: '9/18/2025 to 1/20/2026',
@@ -21,8 +19,7 @@ const projectData = [
     link: 'https://github.com/letsdothis2003/Maython',
   },
   {
-    title: 'Library Management System',
-    title: 'Library Management System(2025-Ongoing)',
+    title: 'Library Management System (2025-Ongoing)',
     description:
       'A database management system built with SQL and Java. It tracks books, members, staff, and checkouts while enforcing relational constraints to maintain data integrity.',
     publishDate: '4/22/2025 to 5/11/2026 (Phase 1)',
@@ -30,8 +27,7 @@ const projectData = [
     link: 'https://github.com/letsdothis2003/Library-Database-Management-System',
   },
   {
-    title: 'Customer Churn System',
-    title: 'Customer Churn System(2024-Ongoing)',
+    title: 'Customer Churn System (2024-Ongoing)',
     description:
       'A Java-based software system that uses the Random Forest algorithm to predict whether a customer is likely to cancel their subscription based on their historical data.',
     publishDate: '10/3/2024 to 12/15/2024 (Phase 1)',
@@ -39,8 +35,7 @@ const projectData = [
     link: 'https://github.com/letsdothis2003/Customer_Churn_System',
   },
   {
-    title: 'Music Festival Website',
-    title: 'Music Festival Website(2024)',
+    title: 'Music Festival Website (2024)',
     description:
       'A website designed to showcase local music events, featuring a functional merchandise store integrated with the Stripe API.',
     publishDate: '11/13/2024 to 12/12/2024',
@@ -48,18 +43,14 @@ const projectData = [
     link: 'https://github.com/letsdothis2003/Music-Festival-Website',
   },
   {
-    title: 'Technology Company Website',
-    title: 'Technology Company Website(2024)',
+    title: 'Technology Company Website (2024)',
     description:
       'A template website created to represent a fictional tech company. We incorporated creative visuals and concepts to make the design engaging and attention-grabbing.',
     publishDate: '10/27/2024 to 11/3/2024',
     collaborators: 'Bernardo Antonio Manto, Shah Muzafar, Steven Campeche, Jamal Siddiqui',
-    link: 'https://github.com/letsdothis2003/Technology-Company-Website',
     link: 'https://letsdothis2003.github.io/Technology-Company-Website/',
   },
 ];
-
-
 
 const Projects = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -71,7 +62,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section">
       <div className="themed-box">
-        <h2 className="section-title">My Projects(Click the names to expand)</h2>
+        <h2 className="section-title">My Projects (Click names to expand)</h2>
       </div>
 
       <div className="projects-container">
@@ -95,6 +86,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
+                      onClick={(e) => e.stopPropagation()} // Prevents closing card when clicking link
                     >
                       {project.link}
                     </a>
@@ -107,10 +99,6 @@ const Projects = () => {
       </div>
     </section>
   );
-};
-
-export default Projects;
-
 };
 
 export default Projects;
