@@ -1,28 +1,35 @@
 .about-section {
   padding: 2rem;
-  background-color: #f0f0f0;
+  background-color: whiteSmoke;
 }
 
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
 
-  h2 {
-    text-align: center;
-    text-decoration:underline;
-    font-weight: bold;
-  }
+#Self-Portrait {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px; /* reminder, for controlling size */
+  border-radius: 16px; /* for rounded corners */
+}
 
-  #Self-Portrait {
-    display: block;
-    margin: 0 auto;
-    max-width: 150px; /* reminder, for controlling size */
-    border-radius: 16px; /* for rounded corners */
-  }
-  
-   
-  .about-section p {
-    margin: 10px auto;          /* centering */
-    max-width: 800px;           /* DO NOT FORGET, controls paragraph width */
-    text-align: left;          
-    line-height: 1.6;
-    text-indent: 2em; 
-  }
- 
+.about-section p {
+  margin: 10px auto;          /* centering */
+  max-width: 800px;           /* DO NOT FORGET, controls paragraph width */
+  text-align: left;          
+  line-height: 1.6;
+  text-indent: 2em; 
+}
+
+body.dark section, 
+body.dark .themed-box, 
+body.dark .form-container,
+body.dark .about-section,
+body.dark .projects-section {
+  background-color: darkSlateBlue;
+  color: white;
+  border-radius: 8px;
+}

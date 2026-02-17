@@ -1,6 +1,6 @@
 .projects-section {
   padding: 2rem;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 
@@ -29,7 +29,7 @@
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px dimgray;
 }
 
 .project-title {
@@ -41,7 +41,7 @@
 .project-details {
   margin-top: 1rem;
   padding: 1rem;
-  background-color: var(--box-background); /* Keeps theme consistent */
+  background-color: var(--box-background);  
   border-top: 1px solid var(--border-color);
   border-radius: 0.75rem;
 }
@@ -52,4 +52,14 @@
   border-radius: 0.75rem;
   object-fit: cover;
   margin-bottom: 1rem;
+}
+
+body.dark section, 
+body.dark .themed-box, 
+body.dark .form-container,
+body.dark .about-section,
+body.dark .projects-section {
+  background-color: darkSlateBlue;
+  color: white;
+  border-radius: 8px;
 }

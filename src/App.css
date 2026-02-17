@@ -1,8 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: transparent;
 }
 
 .logo {
@@ -11,11 +18,13 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em royalBlue);
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em skyBlue);
 }
 
 @keyframes logo-spin {
@@ -38,7 +47,27 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: gray;
 }
 
+body.light {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
 
+body.dark {
+  background-color: darkSlateGrey;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+body.dark section, 
+body.dark .themed-box, 
+body.dark .form-container,
+body.dark .about-section,
+body.dark .projects-section {
+  background-color: darkSlateBlue;
+  color: white;
+  border-radius: 8px;
+}

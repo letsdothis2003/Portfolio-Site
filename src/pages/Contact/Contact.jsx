@@ -1,23 +1,26 @@
 import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
 import './ContactForm.css';
 
 const ContactForm = () => {
   return (
     <section id="contact" className="contact-section">
-      <div className="themed-box">
+      <div className="form-container">
         <h2>Contact Me</h2>
 
-        <form
-          action="https://send.pageclip.co/bjs3MTDfM7unLnK6j28kqfcAlg44CMsW"
-          className="pageclip-form"
-          method="post"
-        >
+        <form action="https://api.web3forms.com/submit" method="POST">
+          {/* Your Web3Forms Access Key */}
+          <input type="hidden" name="access_key" value="de95b588-e25e-4674-be05-a869867fa7ff" />
+
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" className="pageclip-form__submit">
-            <span>Send Message</span>
-          </button>
+          
+          <div className="button-box">
+            <button type="submit">
+              <strong>Submit</strong>
+            </button>
+          </div>
         </form>
 
         <div className="contact-links">
@@ -28,8 +31,10 @@ const ContactForm = () => {
                 href="https://github.com/letsdothis2003"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="social-link"
               >
-                GitHub
+                <FaGithub className="social-icon" />
+                <span>GitHub</span>
               </a>
             </li>
             <li>
@@ -37,8 +42,10 @@ const ContactForm = () => {
                 href="https://www.linkedin.com/in/fahim-t-30991b27a/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="social-link"
               >
-                LinkedIn
+                <FaLinkedin className="social-icon" />
+                <span>LinkedIn</span>
               </a>
             </li>
           </ul>
