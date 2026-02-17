@@ -1,106 +1,85 @@
-/* ContactForm.css */
+.contact-section {
+padding: 2rem;
+background-color: whiteSmoke;
+min-height: 80vh;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .form-container {
-  max-width: 500px;
-  margin: 10px auto;
-  padding: 20px;
-  border: 1px solid gainsboro;
-  border-radius: 8px;
-  background: lavender;
+max-width: 800px; /* Matched to About/Projects width to prevent shifting */
+margin: 10px auto;
+padding: 30px;
+border: 1px solid gainsboro;
+border-radius: 12px;
+background: lavender;
+transition: background-color 0.3s ease;
 }
 
-label {
-  display: block;
-  margin-top: 10px;
+input, textarea {
+width: 100%;
+padding: 12px;
+margin-top: 8px;
+border: 1px solid silver;
+border-radius: 8px;
+box-sizing: border-box;
+font-family: inherit;
 }
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid gainsboro;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-textarea {
-  min-height: 3em;
-}
-
-
 
 .button-box {
-  margin-top: 20px;
-  padding: 10px;
-  border: 3px solid DodgerBlue; 
-  border-radius: 12px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
+margin-top: 20px;
+padding: 10px;
+border: 3px solid DodgerBlue;
+border-radius: 12px;
+background-color: white;
 }
 
 button {
-  width: 100%;
-  padding: 15px;
-  background-color: DodgerBlue; 
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  transition: background-color 0.3s ease;
+width: 100%;
+padding: 15px;
+background-color: DodgerBlue;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1.2rem;
+font-weight: bold;
 }
 
-button:hover {
-  background-color: DeepSkyBlue;
+/* Dark Mode Overrides */
+body.dark .contact-section {
+background-color: darkSlateBlue;
 }
 
- 
-button .circle {
-  position: absolute;
-  background-color: white;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  animation: scale 0.5s ease-out;
-}
-@keyframes scale {
-  to {
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 0;
-  }
+body.dark .form-container {
+background-color: midnightBlue;
+border-color: dimGray;
+color: white;
 }
 
-.success-message {
-  color: green;
-  margin-top: 15px;
-  display: none;
+body.dark .button-box {
+background-color: darkSlateBlue;
 }
 
 .contact-links ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 20px;
+list-style: none;
+padding: 0;
+display: flex;
+gap: 30px;
+justify-content: center;
+margin-top: 30px;
 }
 
 .social-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: slateBlue;
-  font-weight: bold;
+text-decoration: none;
+color: slateBlue;
+font-weight: bold;
+transition: color 0.2s;
 }
 
-.social-icon {
-  font-size: 3rem;
-  color: black;
+body.dark .social-link {
+color: lightSteelBlue;
+}
+
+body.dark .social-icon {
+color: white !important;
 }

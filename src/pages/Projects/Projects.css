@@ -1,65 +1,54 @@
 .projects-section {
-  padding: 2rem;
-  background-color: white;
-}
-
-
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: var(--text);
+padding: 2rem;
+background-color: whiteSmoke;
+min-height: 80vh;
+transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .projects-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+max-width: 800px;  
+margin: 0 auto;
 }
 
-.theme-box {
-  background-color: var(--box-background);
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
-  padding: 1rem 1.5rem;
-  transition: all 0.3s ease;
-  color: var(--text);
-  cursor: pointer;
+.themed-box {
+background-color: white;
+border: 1px solid gainsboro;
+border-radius: 12px;
+padding: 1.5rem;
+transition: all 0.3s ease;
+cursor: pointer;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 10px dimgray;
+transform: translateY(-4px);
+box-shadow: 0 6px 15px dimgray;
 }
 
 .project-title {
-  margin: 0.5rem 0;
-  font-size: 1.4rem;
-  text-align: center;
+margin: 0;
+font-size: 1.4rem;
+font-weight: bold;
 }
 
-.project-details {
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: var(--box-background);  
-  border-top: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-}
-
-.project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 0.75rem;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
-body.dark section, 
-body.dark .themed-box, 
-body.dark .form-container,
-body.dark .about-section,
+ 
 body.dark .projects-section {
-  background-color: darkSlateBlue;
-  color: white;
-  border-radius: 8px;
+background-color: darkSlateBlue;
+}
+
+body.dark .themed-box {
+background-color: midnightBlue;
+border-color: dimGray;
+color: white;
+}
+
+body.dark .project-details {
+background-color: darkSlateBlue;
+border-top: 1px solid dimGray;
+}
+
+body.dark .project-link {
+color: lightSteelBlue;
 }
