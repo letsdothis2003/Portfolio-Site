@@ -9,7 +9,6 @@ const ContactForm = () => {
         <h2>Contact Me</h2>
 
         <form action="https://api.web3forms.com/submit" method="POST">
-          {/* Your Web3Forms Access Key */}
           <input type="hidden" name="access_key" value="de95b588-e25e-4674-be05-a869867fa7ff" />
 
           <input type="text" name="name" placeholder="Your Name" required />
