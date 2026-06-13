@@ -5,7 +5,7 @@ const projectData = [
     {
     title: 'Thrive Mural Map',
     description:
-      'This was created for a non-profit organization I interned at, known as Thrive collective. This was done to showcase all the murals and art installations they made, helping promote their work.',
+      'This was created for a non-profit organization I interned at, known as Thrive Collective. This was done to showcase all the murals and art installations they made, helping promote their work.',
     publishDate: '5/1/2026 to 6/12/2026',
     collaborators: 'Taqarrub Hossain',
     link: 'https://mural-map-one.vercel.app/',
