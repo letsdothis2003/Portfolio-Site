@@ -14,7 +14,7 @@ const projectData = [
   {
     title: 'Obtainum: Collector Marketplace store',
     description:
-      'This is an online, local marketplace store which uses an LLM api to assist both consumers and sellers with decisions when it comes to products',
+      'This is an online, local marketplace store which uses an AI integration to assist both consumers and sellers with decisions when it comes to products',
     publishDate: '4/3/2026 to 4/26/2026',
     link: 'https://letsdothis2003.github.io/collector_marketplace/',
   },
