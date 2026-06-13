@@ -2,6 +2,25 @@ import React, { useState } from 'react';
 import './Projects.css';
 
 const projectData = [
+    {
+    title: 'Thrive Mural Map',
+    description:
+      'This was created for a non-profit organization I interned at, known as Thrive collective. This was done to showcase all the murals and art installations they made, helping promote their work.',
+    publishDate: '5/1/2026 to 6/12/2026',
+    collaborators: 'Taqarrub Hossain',
+    link: 'https://mural-map-one.vercel.app/',
+  },
+  
+  {
+    title: 'Obtainum: Collector Marketplace store',
+    description:
+      'This is an online, local marketplace store which uses an LLM api to assist both consumers and sellers with decisions when it comes to products',
+    publishDate: '4/3/2026 to 4/26/2026',
+    collaborators: 'Taqarrub Hossain',
+    link: 'https://letsdothis2003.github.io/collector_marketplace/',
+  },
+
+
   {
     title: 'AI-Generated Image Detector (2026-Ongoing)',
     description:
@@ -37,7 +56,7 @@ const projectData = [
   {
     title: 'Music Festival Website (2024)',
     description:
-      'A website designed to showcase local music events, featuring a functional merchandise store integrated with the Stripe API.',
+      'A website designed to showcase local music events, featuring a functional merchandise store integrated with the Stripe API. It is functional currently but a lot of the apis and services we used have now been gutted out.',
     publishDate: '11/13/2024 to 12/12/2024',
     collaborators: 'Jamal Siddiqui, Steven Campeche',
     link: 'https://github.com/letsdothis2003/Music-Festival-Website',
@@ -45,7 +64,7 @@ const projectData = [
   {
     title: 'Technology Company Website (2024)',
     description:
-      'A template website created to represent a fictional tech company. We incorporated creative visuals and concepts to make the design engaging and attention-grabbing.',
+      'A template website created to represent a fictional tech company. We incorporated creative visuals and concepts to make the design engaging and attention-grabbing. It is functional currently but a lot of the apis and services we used have now been gutted out.',
     publishDate: '10/27/2024 to 11/3/2024',
     collaborators: 'Bernardo Antonio Manto, Shah Muzafar, Steven Campeche, Jamal Siddiqui',
     link: 'https://letsdothis2003.github.io/Technology-Company-Website/',
