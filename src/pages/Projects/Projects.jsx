@@ -16,7 +16,6 @@ const projectData = [
     description:
       'This is an online, local marketplace store which uses an LLM api to assist both consumers and sellers with decisions when it comes to products',
     publishDate: '4/3/2026 to 4/26/2026',
-    collaborators: 'Taqarrub Hossain',
     link: 'https://letsdothis2003.github.io/collector_marketplace/',
   },
 
