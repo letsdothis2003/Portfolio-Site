@@ -19,7 +19,6 @@ const projectData = [
     link: 'https://letsdothis2003.github.io/collector_marketplace/',
   },
 
-
   {
     title: 'AI-Generated Image Detector (2026-Ongoing)',
     description:
