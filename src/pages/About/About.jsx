@@ -16,7 +16,7 @@ const About = () => (
       <p>Hello, my name is <strong>Fahim Tanvir</strong> (Pronounced FAH-HEEM TAN-VEER).</p>
 
       <p>
-        I’m a student at CUNY Queens College(Class of 26) with interests in 
+        I’m a person with interests in 
         database systems, web development, software testing, and machine learning. 
         I enjoy exploring how technology works behind the scenes and building 
         projects that connect theory with real-world applications and situations. 
@@ -24,9 +24,8 @@ const About = () => (
 
       <p>
         I’ve gained experience in education, mentoring, and working with 
-        artificial intelligence. I love stepping outside my comfort zone, 
-        learning new things, and becoming a “jack of all trades” when it comes 
-        to knowledge. One of my favorite things is taking complex technical 
+        artificial intelligence. I love stepping outside my comfort zone and
+        learning new things. One of my favorite things is taking complex technical 
         topics and making them understandable for non‑technical audiences.
       </p>
 
