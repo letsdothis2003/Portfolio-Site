@@ -46,3 +46,39 @@ body.dark .projects-section {
   border-radius: 8px;
 }
 
+.cta-section {
+  display: flex;
+  flex-direction: column;   /* stack label above button */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* optional: center vertically if needed */
+  margin-top: 2rem;
+}
+
+.cta-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;      /* space between text and button */
+  text-align: center;
+}
+
+.resume-link-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.resume-link-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.resume-link-btn:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
