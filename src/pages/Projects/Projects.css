@@ -1,92 +1,58 @@
 .projects-section {
-padding: 2rem;
-background-color: whiteSmoke;
-min-height: 80vh;
-transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 1rem 0 2rem;
 }
 
 .projects-container {
-display: flex;
-flex-direction: column;
-gap: 1.5rem;
-max-width: 800px;
-margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .project-card {
-transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .project-card:hover {
-transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
-.themed-box {
-background-color: white;
-border: 3px solid DodgerBlue;
-border-radius: 12px;
-padding: 1.5rem;
-transition: all 0.3s ease;
-cursor: pointer;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+.project-card .themed-box {
+  padding: 1.2rem 1.3rem;
+  border-radius: 20px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1.3rem;
+  text-align: left;
 }
 
 .project-title {
-margin: 0;
-font-size: 1.4rem;
-font-weight: bold;
-color: DodgerBlue;
-text-align: center;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: left;
 }
 
 .project-details {
-margin-top: 1rem;
-padding: 1rem;
-background-color: lavender;
-border-top: 1px solid gainsboro;
-border-radius: 8px;
-color: black;
+  margin-top: 0.9rem;
+  padding: 0.9rem;
+  border-radius: 16px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--text);
+}
+
+.project-details p {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .project-link {
-color: slateBlue;
-font-weight: bold;
-text-decoration: underline;
-}
-button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: slateBlue;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-
-/* Dark Mode Overrides */
-body.dark .projects-section {
-background-color: darkSlateBlue;
-}
-
-body.dark .themed-box {
-background-color: midnightBlue;
-border-color: DodgerBlue;
-color: white;
-}
-
-body.dark .project-title {
-color: lightSkyBlue;
-}
-
-body.dark .project-details {
-background-color: darkSlateBlue;
-border-top: 1px solid dimGray;
-color: white;
-}
-
-body.dark .project-link {
-color: lightSteelBlue;
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
 }

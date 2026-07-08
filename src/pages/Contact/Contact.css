@@ -1,85 +1,101 @@
 .contact-section {
-padding: 2rem;
-background-color: whiteSmoke;
-min-height: 80vh;
-transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 1rem 0 2rem;
 }
 
 .form-container {
-max-width: 800px;  
-margin: 10px auto;
-padding: 30px;
-border: 1px solid gainsboro;
-border-radius: 12px;
-background: lavender;
-transition: background-color 0.3s ease;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.4rem;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
-input, textarea {
-width: 100%;
-padding: 12px;
-margin-top: 8px;
-border: 1px solid silver;
-border-radius: 8px;
-box-sizing: border-box;
-font-family: inherit;
+.contact-intro {
+  margin-bottom: 1rem;
+}
+
+.contact-intro h2 {
+  margin: 0.2rem 0 0.5rem;
+  font-size: clamp(1.6rem, 2.3vw, 2.1rem);
+  text-align: left;
+}
+
+.contact-intro p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-strong);
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
 }
 
 .button-box {
-margin-top: 20px;
-padding: 10px;
-border: 3px solid DodgerBlue;
-border-radius: 12px;
-background-color: white;
+  padding-top: 0.4rem;
 }
 
-button {
-width: 100%;
-padding: 15px;
-background-color: DodgerBlue;
-color: white;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-font-size: 1.2rem;
-font-weight: bold;
+.submit-btn {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-/* Dark Mode Overrides */
-body.dark .contact-section {
-background-color: darkSlateBlue;
+.contact-links {
+  margin-top: 1.2rem;
 }
 
-body.dark .form-container {
-background-color: midnightBlue;
-border-color: dimGray;
-color: white;
-}
-
-body.dark .button-box {
-background-color: darkSlateBlue;
+.contact-links p {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
 }
 
 .contact-links ul {
-list-style: none;
-padding: 0;
-display: flex;
-gap: 30px;
-justify-content: center;
-margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social-link {
-text-decoration: none;
-color: slateBlue;
-font-weight: bold;
-transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.7rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-strong);
+  color: var(--text);
+  font-weight: 600;
 }
 
-body.dark .social-link {
-color: lightSteelBlue;
-}
-
-body.dark .social-icon {
-color: white !important;
+.social-icon {
+  color: var(--primary);
 }
