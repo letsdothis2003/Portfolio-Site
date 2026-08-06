@@ -72,6 +72,7 @@ const About = () => (
                 <ul className="detail-list detail-list--inline">
                   <li>Firebase</li>
                   <li>Supabase</li>
+                  <li>Pocketbase</li>
                   <li>Render</li>
                   <li>Vercel</li>
                   <li>Netlify</li>
