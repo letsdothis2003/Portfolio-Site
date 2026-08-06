@@ -82,7 +82,7 @@ const About = () => (
           </div>
 
           <div className="about-detail-card">
-            <h3>Places I&rsquo;ve worked</h3>
+            <h3>Places I&rsquo;ve worked at</h3>
             <ul className="detail-list detail-list--solid detail-list--inline">
               <li>CUNY</li>
               <li>CodePath</li>
