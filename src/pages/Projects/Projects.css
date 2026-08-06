@@ -59,6 +59,18 @@
   text-align: center;
 }
 
+body.dark .projects-section .section-title,
+body.dark .projects-section .project-title,
+body.dark .projects-section .project-details p,
+body.dark .projects-section .project-details strong,
+body.dark .projects-section .project-link {
+  color: #fde68a;
+}
+
+body.dark .project-details {
+  background: rgba(15, 23, 42, 0.55);
+}
+
 .project-details {
   max-height: 0;
   opacity: 0;
