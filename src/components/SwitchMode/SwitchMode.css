@@ -1,0 +1,46 @@
+.switchmode-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.switchmode-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+}
+
+.switchmode-knob {
+  position: absolute;
+  top: -2px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.15);
+  z-index: 30;
+}
+
+.switchmode-icon {
+  position: relative;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switchmode-icon-inner {
+  display: block;
+}
+
+.switchmode-placeholder {
+  width: 144px;
+  height: 72px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+}

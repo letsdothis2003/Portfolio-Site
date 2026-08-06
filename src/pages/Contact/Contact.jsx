@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
-import './ContactForm.css';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import './Contact.css';
 
 const ContactForm = () => {
   return (
@@ -13,11 +13,11 @@ const ContactForm = () => {
 
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          
+          <textarea name="message" placeholder="Your Message" required />
+
           <div className="button-box">
-            <button type="submit">
-              <strong>Submit</strong>
+            <button type="submit" className="submit-btn">
+              Submit
             </button>
           </div>
         </form>

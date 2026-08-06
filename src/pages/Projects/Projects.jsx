@@ -91,25 +91,23 @@ const Projects = () => {
           >
             <div className="themed-box">
               <p className="project-title">{project.title}</p>
-              {expandedIndex === index && (
-                <div className="project-details">
-                  <p><strong>Description:</strong> {project.description}</p>
-                  <p><strong>Date:</strong> {project.publishDate}</p>
-                  <p><strong>Collaborators:</strong> {project.collaborators}</p>
-                  <p>
-                    <strong>Link:</strong>{' '}
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                      onClick={(e) => e.stopPropagation()} // Prevents closing card when clicking link
-                    >
-                      {project.link}
-                    </a>
-                  </p>
-                </div>
-              )}
+              <div className="project-details">
+                <p><strong>Description:</strong> {project.description}</p>
+                <p><strong>Date:</strong> {project.publishDate}</p>
+                <p><strong>Collaborators:</strong> {project.collaborators}</p>
+                <p>
+                  <strong>Link:</strong>{' '}
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                    onClick={(e) => e.stopPropagation()} // Prevents closing card when clicking link
+                  >
+                    {project.link}
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         ))}

@@ -39,15 +39,9 @@ const App = () => {
       <ScrollToTop />
       
       <div className={`app-layout ${theme}`}>
-        <Navbar theme={theme} toggleTheme={toggleTheme} />
+        <Navbar theme={theme} setTheme={setTheme} />
 
         <main className="main-content">
-          <div className="theme-toggle-container">
-            <button className="theme-switch-btn" onClick={toggleTheme}>
-              {theme === "light" ? "Dark Mode" : "Light Mode"}
-            </button>
-          </div>
-
           <Suspense fallback={<Loader />}>
             <Routes>
               <Route path="/" element={<About />} />
